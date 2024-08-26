@@ -14,7 +14,7 @@ bot = Bot(API_TOKEN)
 
 async def start_bot():
     """Start the bot script as a subprocess."""
-    process = await asyncio.create_subprocess_exec('python3', 'm.py')
+    process = await asyncio.create_subprocess_exec('python3', 'test.py')
     return process
 
 async def notify_admin(message):
